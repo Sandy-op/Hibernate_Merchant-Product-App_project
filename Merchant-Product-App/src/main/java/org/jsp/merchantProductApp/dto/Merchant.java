@@ -83,4 +83,10 @@ public class Merchant {
 		this.products = products;
 	}
 
+	@Override
+	public String toString() {
+		return "Merchant [id=" + id + ", name=" + name + ", phone=" + phone + ", email=" + email + ", gst_number="
+				+ gst_number + ", password=" + password + "]";
+	}
+
 }

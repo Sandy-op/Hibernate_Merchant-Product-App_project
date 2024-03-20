@@ -37,6 +37,10 @@ public class MerchantDao {
 		return null;
 	}
 
+	public Merchant findMerchantById(int id) {
+		return manager.find(Merchant.class, id);
+	}
+
 	public Merchant verifyMerchant(long phone, String password) {
 		Query q = manager.createQuery("select m from Merchant m where m.phone=?1 and m.password=?2");
 		q.setParameter(1, phone);

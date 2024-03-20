@@ -1,0 +1,5 @@
+package org.jsp.merchantProductApp.dao;
+
+public class ProductDao {
+
+}

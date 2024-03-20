@@ -1,0 +1,57 @@
+package org.jsp.merchantProductApp.controller;
+
+import java.util.Scanner;
+
+import org.jsp.merchantProductApp.dao.MerchantDao;
+import org.jsp.merchantProductApp.dto.Merchant;
+
+public class MerchantController {
+	public static void main(String[] args) {
+		MerchantDao merchantDao = new MerchantDao();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1. Save Merchant");
+		System.out.println("2. Update Merchant");
+		System.out.println("3. Find Merchant By id");
+		System.out.println("4. Verify Merchant By Phone and Password");
+		System.out.println("5. Verify Merchant By Email and Password");
+		switch (sc.nextInt()) {
+		case 1: {
+			Merchant merchant = new Merchant();
+			System.out.println("Enter the name,phone,email,gst_number and password");
+			merchant.setName(sc.next());
+			merchant.setPhone(sc.nextLong());
+			merchant.setEmail(sc.next());
+			merchant.setGst_number(sc.next());
+			merchant.setPassword(sc.next());
+			merchant = merchantDao.saveMerchant(merchant);
+			System.out.println("Merchant saved with id: " + merchant.getId());
+			break;
+		}
+		case 2: {
+			Merchant merchant = new Merchant();
+			System.out.println("Enter the name,phone,email,gst_number and password");
+			merchant.setName(sc.next());
+			merchant.setPhone(sc.nextLong());
+			merchant.setEmail(sc.next());
+			merchant.setGst_number(sc.next());
+			merchant.setPassword(sc.next());
+			merchant = merchantDao.updateMerchant(merchant);
+			System.out.println("Merchant saved with id: " + merchant.getId());
+			break;
+		}
+		case 3: {
+
+		}
+		case 4: {
+
+		}
+		case 5: {
+
+		}
+		default: {
+
+		}
+		
+		}
+	}
+}

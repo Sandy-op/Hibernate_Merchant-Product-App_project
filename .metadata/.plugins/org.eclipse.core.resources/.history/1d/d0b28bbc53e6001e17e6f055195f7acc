@@ -1,0 +1,5 @@
+package org.jsp.merchantProductApp.controller;
+
+public class MerchantController {
+
+}

@@ -1,0 +1,38 @@
+package org.jsp.merchantProductApp.controller;
+
+import java.util.Scanner;
+
+import org.jsp.merchantProductApp.dao.ProductDao;
+import org.jsp.merchantProductApp.dto.Product;
+
+public class ProductController {
+	public static void main(String[] args) {
+		ProductDao productDao = new ProductDao();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1.Add Product");
+		System.out.println("2.Update Product");
+		System.out.println("3.Find Products By Merchant Id");
+		System.out.println("4.Find Products By Brand");
+		System.out.println("5.Find Products By Category");
+		switch (sc.nextInt()) {
+		case 1: {
+			System.out.println("Enter Merchant Id to add products");
+			int merchant_id = sc.nextInt();
+			System.out.println("Enter name,brand,category,description,image_url");
+			Product product = new Product();
+			product.setName(sc.next());
+			product.setBrand(sc.next());
+			product.setCategory(sc.next());
+			product.setDescription(sc.next());
+			product.setCost(sc.nextDouble());
+			product.setImage_url(sc.next());
+			product = productDao.saveProduct(product, merchant_id);
+			if (product != null)
+				System.out.println("Product added with Id:" + product.getId());
+			else
+				System.err.println("cannot add product as Merchant Id is Invalid");
+			break;
+		}
+		}
+	}
+}

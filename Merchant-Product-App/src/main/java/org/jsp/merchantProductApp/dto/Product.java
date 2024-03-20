@@ -85,4 +85,10 @@ public class Product {
 		this.merchant = merchant;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", brand=" + brand + ", category=" + category + ", description="
+				+ description + ", image_url=" + image_url + ", cost=" + cost + "]";
+	}
+
 }
