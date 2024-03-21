@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="antlr.collections.List"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
@@ -11,14 +10,17 @@
     <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
     <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="net.bytebuddy.matcher.ElementMatcher"/>
+    <fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
+    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dao.MerchantDao"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dto.Merchant"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
-    <fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
+    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dao.ProductDao"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dao.MerchantDao"/>
-    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dto.Merchant"/>
+    <fullyQualifiedTypeName name="org.jsp.merchantProductApp.dto.Product"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
